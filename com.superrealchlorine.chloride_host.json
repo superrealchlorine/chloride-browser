@@ -1,0 +1,9 @@
+{
+	"name": "com.superrealchlorine.chloride_host",
+	"description": "Native TCP messaging bridge for Chloride Protocol",
+	"path": "chloride-host.py",
+	"type": "stdio",
+	"allowed_extensions": [
+		"chloride-firefox@superrealchlorine.com"
+	]
+}
