@@ -24,7 +24,7 @@ A Manifest V3 browser extension and native messaging runtime for rendering Chlor
 
 ## Usage
 
-You should now be able toe use the Chloride URI easily as well as load Chloride applications! For example [Click here](ext+chloride://chloride.chlorine.me/) should load perfectly fine.
+You should now be able toe use the Chloride URI easily as well as load Chloride applications! For example ext+chloride://chloride.chlorine.me/ should load perfectly fine.
 
 You can also navigate to the extension protocol handler and open the viewer tab directly:
 
