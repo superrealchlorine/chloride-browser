@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	const canvas = document.getElementById("chloride-canvas");
 	const ctx = canvas.getContext("2d");
 
-	const cleanTarget = target.replace(/^ext\+chloride:\/\//, "");
+	let cleanTarget = decodeURIComponent(target);
+	cleanTarget = cleanTarget.replace(/^ext\+chloride:(?:\/\/)?/i, "");
+	cleanTarget = cleanTarget.replace(/\/.*$/, "");
+
 	const [host, portStr] = cleanTarget.split(":");
 	const port = parseInt(portStr || "49130", 10);
 
