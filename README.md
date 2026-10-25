@@ -1,6 +1,6 @@
 # chloride-browser
 
-A Manifest V3 browser extension and native messaging runtime for rendering Chloride Protocol WebAssembly applications on an HTML5 canvas. For now only Firefox and Firefox-based browsers are accepted.
+A Manifest V3 browser extension and native messaging runtime for rendering Chloride Protocol WebAssembly applications on an HTML5 canvas. For now only Firefox and Firefox-based browsers are supported.
 
 ## Structure
 
