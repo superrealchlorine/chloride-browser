@@ -26,4 +26,5 @@ A Manifest V3 browser extension and native messaging runtime for rendering Chlor
 
 Navigate to a Chloride URI via the extension protocol handler or by opening the viewer tab directly:
 
-moz-extension://<internal-uuid>/viewer.html?target=chloride.chlorine.me:49130
+example: `moz-extension://<internal-uuid>/viewer.html?target=chloride.chlorine.me:49130`
+
