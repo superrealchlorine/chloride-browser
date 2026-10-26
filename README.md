@@ -1,3 +1,7 @@
+# WARNING
+
+The renderer (viewer) used by this extension is still experimental and currently supports only Chloride applications that output framebuffers. Please use the native client "rion" for full functionality while this client is updated.
+
 # chloride-browser
 
 A Manifest V3 browser extension and native messaging runtime for rendering Chloride Protocol WebAssembly applications on an HTML5 canvas. For now only Firefox and Firefox-based browsers are supported.
