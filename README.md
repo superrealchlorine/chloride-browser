@@ -14,9 +14,7 @@ A Manifest V3 browser extension and native messaging runtime for rendering Chlor
 
 ## Installation
 
-1. Run the native host installer:
-
-`./install.sh`
+1. Run the native host installer: `./install.sh`
 
 2. Open `about:debugging#/runtime/this-firefox` in Firefox or LibreWolf.
 
