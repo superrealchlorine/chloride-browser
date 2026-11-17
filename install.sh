@@ -24,20 +24,43 @@ echo " Chloride Protocol Native Host Installer "
 echo "=========================================="
 echo ""
 
+
 DETECTED_PATHS=()
 DETECTED_NAMES=()
 
-for name in "${!BROWSERS[@]}"; do
-    target_dir="${BROWSERS[$name]}"
-    parent_dir="$(dirname "$target_dir")"
-    if [ -d "$parent_dir" ]; then
+detect_browser() {
+    local name="$1"
+    local executable="$2"
+    local profile_dir="$3"
+    local target_dir="$4"
+
+    # Detect either an installed browser or an existing profile.
+    if command -v "$executable" >/dev/null 2>&1 || [ -d "$profile_dir" ]; then
         DETECTED_NAMES+=("$name")
         DETECTED_PATHS+=("$target_dir")
     fi
-done
+}
+
+detect_browser "Firefox" "firefox" \
+    "$HOME/.mozilla" \
+    "$HOME/.mozilla/native-messaging-hosts"
+
+detect_browser "LibreWolf" "librewolf" \
+    "$HOME/.librewolf" \
+    "$HOME/.librewolf/native-messaging-hosts"
+
+detect_browser "Waterfox" "waterfox" \
+    "$HOME/.waterfox" \
+    "$HOME/.waterfox/native-messaging-hosts"
+
+detect_browser "Thunderbird" "thunderbird" \
+    "$HOME/.thunderbird" \
+    "$HOME/.thunderbird/native-messaging-hosts"
 
 if [ ${#DETECTED_PATHS[@]} -eq 0 ]; then
     echo "No supported Firefox-based browsers detected."
+    echo "Install Firefox, LibreWolf, Waterfox, or Thunderbird,"
+    echo "or create an existing browser profile."
     exit 1
 fi
 
