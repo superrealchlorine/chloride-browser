@@ -16,13 +16,22 @@ A Manifest V3 browser extension and native messaging runtime for rendering Chlor
 - `com.superrealchlorine.chloride_host.json`: Native messaging host manifest.
 - `install.sh`: Interactive installation script for Firefox, LibreWolf, and derivatives.
 
-## Installation
+## Installing the extension on Firefox
 
-1. Run the native host installer: `./install.sh`
+It's available here:
+https://addons.mozilla.org/en-US/firefox/addon/chloride-browser-extension/
 
-2. Open `about:debugging#/runtime/this-firefox` in Firefox or LibreWolf.
+For full functionality, you'll need to install the helper script.
 
-3. Click **Load Temporary Add-on...** and select `manifest.json`.
+## Installing the helper script
+
+1. Clone this repository with git: `git clone https://github.com/superrealchlorine/chloride-browser.git`
+
+2. Enter the directory: `cd chloride-browser`
+
+3. Run the native host installer: `./install.sh`
+
+You're done!
 
 ## Usage
 
