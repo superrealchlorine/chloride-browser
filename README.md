@@ -36,8 +36,3 @@ You're done!
 ## Usage
 
 You should now be able toe use the Chloride URI easily as well as load Chloride applications! For example ext+chloride://chloride.chlorine.me/ should load perfectly fine.
-
-You can also navigate to the extension protocol handler and open the viewer tab directly:
-
-example: `moz-extension://<internal-uuid>/viewer.html?target=chloride.chlorine.me:49130`
-
